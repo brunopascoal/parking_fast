@@ -33,6 +33,3 @@ class Customer(models.Model):
         
     def __str__(self):
         return self.name
-    
-
-customers_Customer
