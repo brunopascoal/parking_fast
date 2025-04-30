@@ -5,42 +5,91 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
-        ('vehicles', '0001_initial'),
+        ("vehicles", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='ParkingSpot',
+            name="ParkingSpot",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('spot_number', models.CharField(max_length=10, unique=True, verbose_name='Número da vaga')),
-                ('is_available', models.BooleanField(default=True, verbose_name='Disponível')),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "spot_number",
+                    models.CharField(
+                        max_length=10, unique=True, verbose_name="Número da vaga"
+                    ),
+                ),
+                (
+                    "is_available",
+                    models.BooleanField(default=True, verbose_name="Disponível"),
+                ),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
             ],
             options={
-                'verbose_name': 'Vaga de estacionamento',
-                'verbose_name_plural': 'Vagas de estacionamento',
+                "verbose_name": "Vaga de estacionamento",
+                "verbose_name_plural": "Vagas de estacionamento",
             },
         ),
         migrations.CreateModel(
-            name='ParkingRecord',
+            name="ParkingRecord",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('check_in_time', models.DateTimeField(auto_now_add=True, verbose_name='Hora de entrada')),
-                ('check_out_time', models.DateTimeField(blank=True, null=True, verbose_name='Hora de saída')),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
-                ('vehicle', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='parking_records', to='vehicles.vehicle', verbose_name='Veículo')),
-                ('parking_spot', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='parking_records', to='parking.parkingspot', verbose_name='Veículo')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "check_in_time",
+                    models.DateTimeField(
+                        auto_now_add=True, verbose_name="Hora de entrada"
+                    ),
+                ),
+                (
+                    "check_out_time",
+                    models.DateTimeField(
+                        blank=True, null=True, verbose_name="Hora de saída"
+                    ),
+                ),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                (
+                    "vehicle",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="parking_records",
+                        to="vehicles.vehicle",
+                        verbose_name="Veículo",
+                    ),
+                ),
+                (
+                    "parking_spot",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="parking_records",
+                        to="parking.parkingspot",
+                        verbose_name="Veículo",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Registro de estacionamento',
-                'verbose_name_plural': 'Registros de estacionamento',
+                "verbose_name": "Registro de estacionamento",
+                "verbose_name_plural": "Registros de estacionamento",
             },
         ),
     ]
