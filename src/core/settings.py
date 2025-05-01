@@ -74,17 +74,23 @@ WSGI_APPLICATION = "core.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql_psycopg2",
+#         "NAME": "parking_service",
+#         "USER": 'postgres',
+#         "PASSWORD": 'postgres',
+#         "HOST": 'parking_db',
+#         "PORT": '5432',
+#     }
+# }
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "parking_service",
-        "USER": 'postgres',
-        "PASSWORD": 'postgres',
-        "HOST": 'parking_db',
-        "PORT": '5432',
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -108,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "pt-br"
 
 TIME_ZONE = "UTC"
 
@@ -138,7 +144,7 @@ JAZZMIN_SETTINGS = {
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
     "site_brand": "Parking Fast",
     # Logo to use for your site, must be present in static files, used for brand on top left
-    # "site_logo": "images/image.png",
+    "site_logo": "img/favicon.png",
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": "img/logo.png",
     # Logo to use for login form in dark themes (defaults to login_logo)
@@ -146,14 +152,14 @@ JAZZMIN_SETTINGS = {
     # CSS classes that are applied to the logo above
     # "site_logo_classes": "img-circle",
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
-    # "site_icon": None,
+    "site_icon": "img/favicon.png",
     # Welcome text on the login screen
-    "welcome_sign": "Welcome to the Parking Fast",
+    "welcome_sign": "Bem vindo ao Parking Fast",
     # Copyright on the footer
-    "copyright": "Brunop LTDA",
+    "copyright": "brunopascoal",
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string
-    "search_model": ["auth.User", "auth.Group"],
+    #"search_model": ["auth.User", "auth.Group"],
     # Field name on user model that contains avatar ImageField/URLField/Charfield or a callable that receives the user
     "user_avatar": None,
     # "language_chooser": True,
@@ -271,4 +277,36 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
     # OTHER SETTINGS
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": False,
+    "accent": "accent-primary",
+    "navbar": "navbar-dark",
+    "no_navbar_border": False,
+    "navbar_fixed": False,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": False,
+    "sidebar": "sidebar-dark-primary",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+    "theme": "solar",
+    "dark_mode_theme": "solar",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    }
 }
