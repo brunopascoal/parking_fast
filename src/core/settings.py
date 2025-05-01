@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     "parking",
     "authentication",
     'django_seed',
+    'drf_spectacular',
+
 ]
 
 MIDDLEWARE = [
@@ -255,4 +257,14 @@ REST_FRAMEWORK = {
         "rest_framework.permissions.IsAuthenticated",
     ],
     "DEFAULT_FILTER_BACKENDS": ['dj_rql.drf.RQLFilterBackend'],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Parking Fast',
+    'DESCRIPTION': 'Is a API for Parking Fast',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
 }
