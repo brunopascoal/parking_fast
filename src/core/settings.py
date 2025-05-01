@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     "vehicles",
     "parking",
     "authentication",
-    'django_seed',
+    #'django_seed',
     'drf_spectacular',
 
 ]
@@ -76,8 +76,12 @@ WSGI_APPLICATION = "core.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "parking_service",
+        "USER": 'postgres',
+        "PASSWORD": 'postgres',
+        "HOST": 'parking_db',
+        "PORT": '5432',
     }
 }
 
