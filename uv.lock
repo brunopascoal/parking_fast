@@ -12,6 +12,15 @@ wheels = [
 ]
 
 [[package]]
+name = "cachetools"
+version = "5.5.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/81/3747dad6b14fa2cf53fcf10548cf5aea6913e96fab41a3c198676f8948a5/cachetools-5.5.2.tar.gz", hash = "sha256:1a661caa9175d26759571b2e19580f9d6393969e5dfca11fdb1f947a23e640d4", size = 28380 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/76/20fa66124dbe6be5cafeb312ece67de6b61dd91a0247d1ea13db4ebb33c2/cachetools-5.5.2-py3-none-any.whl", hash = "sha256:d26a22bcc62eb95c3beabd9f1ee5e820d3d2704fe2967cbe350e20c8ffcd3f0a", size = 10080 },
+]
+
+[[package]]
 name = "django"
 version = "5.1.7"
 source = { registry = "https://pypi.org/simple" }
@@ -36,6 +45,30 @@ sdist = { url = "https://files.pythonhosted.org/packages/84/96/21b6255e90d92a3eb
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ad/5b/2f8c4b168e6c41bf1e4b14d787deb23d80f618f0693db913bbe208a4a907/django_jazzmin-3.0.1-py3-none-any.whl", hash = "sha256:12a0a4c1d4fd09c2eef22acf6a1f03112b515ba695c59faa8ea80efc81c1f21b", size = 2125957 },
 ]
+
+[[package]]
+name = "django-rql"
+version = "4.4.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "lib-rql" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/78/12/68c77a92cc1cdb42480777cb54d048e7a28e3bc18c07f85a1ec524f802fc/django_rql-4.4.1.tar.gz", hash = "sha256:1c0e5549c52d2c3ac6156f846eb224b6edc07bcf7f09cc1f589b4bc395aa2358", size = 35506 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7e/60/c0aa3495e903da8949c4d9396ce58c59bcf5c9b0506d69b978a44742119f/django_rql-4.4.1-py3-none-any.whl", hash = "sha256:ee69cddbe9bf443c530b2bb386cd1482592b0d17be8fdaf5a3c8b8d2a8b851dd", size = 37132 },
+]
+
+[[package]]
+name = "django-seed"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "faker" },
+    { name = "toposort" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5a/19/0423c1a8adb10c9e246f3a0e661165a7851bb7f4253eb338624081343e76/django-seed-0.3.1.tar.gz", hash = "sha256:93e65d2c10449c464b83e9031be02763ec10e786aa064d649c4dd5ad06fa0eea", size = 18336 }
 
 [[package]]
 name = "djangorestframework"
@@ -75,6 +108,18 @@ wheels = [
 ]
 
 [[package]]
+name = "faker"
+version = "37.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tzdata" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ba/a6/b77f42021308ec8b134502343da882c0905d725a4d661c7adeaf7acaf515/faker-37.1.0.tar.gz", hash = "sha256:ad9dc66a3b84888b837ca729e85299a96b58fdaef0323ed0baace93c9614af06", size = 1875707 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d7/a1/8936bc8e79af80ca38288dd93ed44ed1f9d63beb25447a4c59e746e01f8d/faker-37.1.0-py3-none-any.whl", hash = "sha256:dc2f730be71cb770e9c715b13374d80dbcee879675121ab51f9683d262ae9a1c", size = 1918783 },
+]
+
+[[package]]
 name = "flake8"
 version = "7.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -95,6 +140,29 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b8/21/1e2a441f74a653a144224d7d21afe8f4169e6c7c20bb13aec3a2dc3815e0/isort-6.0.1.tar.gz", hash = "sha256:1cb5df28dfbc742e490c5e41bad6da41b805b0a8be7bc93cd0fb2a8a890ac450", size = 821955 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c1/11/114d0a5f4dabbdcedc1125dee0888514c3c3b16d3e9facad87ed96fad97c/isort-6.0.1-py3-none-any.whl", hash = "sha256:2dc5d7f65c9678d94c88dfc29161a320eec67328bc97aad576874cb4be1e9615", size = 94186 },
+]
+
+[[package]]
+name = "lark-parser"
+version = "0.11.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/64/70/1c52a4c8d0095dcd624722f175e417d564eddd2ed1009a25d922e2302589/lark-parser-0.11.0.tar.gz", hash = "sha256:d047e680418221d21be587cd8f36843df97479a5623b74a7d811c1d832e04989", size = 220476 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/47/e6/4e6109f570cfe41a9d94d8054dbcf712061f8579fce7fc62c4bc539176d3/lark_parser-0.11.0-py2.py3-none-any.whl", hash = "sha256:1d710d4c4664b52579aae80324ff409dedc22b5c592684429f6bd11bfeb7fd49", size = 93028 },
+]
+
+[[package]]
+name = "lib-rql"
+version = "2.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cachetools" },
+    { name = "lark-parser" },
+    { name = "python-dateutil" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/31/d5/6facc0028c6a27f228999cf4990b4b3d1a31b501153e415b7b9b31d24a0a/lib_rql-2.0.2.tar.gz", hash = "sha256:3c7edfa6f822ff6397181a1d99d71e0dc7273ed2655bd3193c021049c40f726c", size = 13547 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8e/5b/c9b11c88114cac3b611f8b5b938aa04d581e95ddc708c56f70d378bda263/lib_rql-2.0.2-py3-none-any.whl", hash = "sha256:2f30cda8e53e269ae2ea6c93f6009b1dc127fcf3aee5027b99de314aa0bbaa7f", size = 14261 },
 ]
 
 [[package]]
@@ -131,6 +199,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/fb/68/ce067f09fca4abeca8771fe667d89cc347d1e99da3e093112ac329c6020e/pyjwt-2.9.0.tar.gz", hash = "sha256:7e1e5b56cc735432a7369cbfa0efe50fa113ebecdc04ae6922deba8b84582d0c", size = 78825 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/79/84/0fdf9b18ba31d69877bd39c9cd6052b47f3761e9910c15de788e519f079f/PyJWT-2.9.0-py3-none-any.whl", hash = "sha256:3b02fb0f44517787776cf48f2ae25d8e14f300e6d7545a4315cee571a415e850", size = 22344 },
+]
+
+[[package]]
+name = "python-dateutil"
+version = "2.9.0.post0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3", size = 342432 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892 },
 ]
 
 [[package]]
@@ -174,6 +254,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "django" },
     { name = "django-jazzmin" },
+    { name = "django-rql" },
     { name = "djangorestframework" },
     { name = "djangorestframework-simplejwt" },
     { name = "dotenv" },
@@ -181,6 +262,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "django-seed" },
     { name = "flake8" },
     { name = "isort" },
     { name = "ruff" },
@@ -190,6 +272,7 @@ dev = [
 requires-dist = [
     { name = "django", specifier = ">=5.1.7" },
     { name = "django-jazzmin", specifier = ">=3.0.1" },
+    { name = "django-rql", specifier = ">=4.4.1" },
     { name = "djangorestframework", specifier = ">=3.16.0" },
     { name = "djangorestframework-simplejwt", specifier = ">=5.5.0" },
     { name = "dotenv", specifier = ">=0.9.9" },
@@ -197,9 +280,19 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "django-seed", specifier = ">=0.3.1" },
     { name = "flake8", specifier = ">=7.2.0" },
     { name = "isort", specifier = ">=6.0.1" },
     { name = "ruff", specifier = ">=0.11.7" },
+]
+
+[[package]]
+name = "six"
+version = "1.17.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050 },
 ]
 
 [[package]]
@@ -209,6 +302,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e5/40/edede8dd6977b0d3da179a342c198ed100dd2aba4be081861ee5911e4da4/sqlparse-0.5.3.tar.gz", hash = "sha256:09f67787f56a0b16ecdbde1bfc7f5d9c3371ca683cfeaa8e6ff60b4807ec9272", size = 84999 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a9/5c/bfd6bd0bf979426d405cc6e71eceb8701b148b16c21d2dc3c261efc61c7b/sqlparse-0.5.3-py3-none-any.whl", hash = "sha256:cf2196ed3418f3ba5de6af7e82c694a9fbdbfecccdfc72e281548517081f16ca", size = 44415 },
+]
+
+[[package]]
+name = "toposort"
+version = "1.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/69/19/8e955d90985ecbd3b9adb2a759753a6840da2dff3c569d412b2c9217678b/toposort-1.10.tar.gz", hash = "sha256:bfbb479c53d0a696ea7402601f4e693c97b0367837c8898bc6471adfca37a6bd", size = 11132 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f6/17/57b444fd314d5e1593350b9a31d000e7411ba8e17ce12dc7ad54ca76b810/toposort-1.10-py3-none-any.whl", hash = "sha256:cbdbc0d0bee4d2695ab2ceec97fe0679e9c10eab4b2a87a9372b929e70563a87", size = 8500 },
 ]
 
 [[package]]
