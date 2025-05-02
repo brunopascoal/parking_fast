@@ -17,7 +17,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ["parking.brunopascoal.tech"]
-
+CSRF_TRUSTED_ORIGINS = ['https://parking.brunopascoal.tech']
 
 # Application definition
 
