@@ -1,15 +1,20 @@
 # Parking Management System
 
-## Live Preview
-
-🔗 [Access the live application here](https://parking.brunopascoal.tech/) 
-🔗 [Access the live application docs here]([https://parking.brunopascoal.tech/)
-- user: demo
-- password: test123@@
-
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-4.2-brightgreen)](https://www.djangoproject.com/)
 [![DRF](https://img.shields.io/badge/Django_REST_Framework-3.14-red)](https://www.django-rest-framework.org/)
+
+## Live Preview
+
+🔗 [Access the live application here](https://parking.brunopascoal.tech/) 
+- user: demo
+- password: test123@@
+
+  
+🔗 [Access the live application docs here]([https://parking.brunopascoal.tech/)
+
+
+
 
 A complete parking management system with vehicle and customer integration, developed using Django REST Framework.
 
