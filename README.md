@@ -11,8 +11,7 @@
 - password: test123@@
 
   
-🔗 [Access the live application docs here]([https://parking.brunopascoal.tech/api/v1/docs/)
-
+🔗 [Access the live application docs here](https://parking.brunopascoal.tech/api/v1/docs/)
 
 
 
