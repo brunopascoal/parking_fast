@@ -1,8 +1,4 @@
-from os import name
-
 from django.db import models
-
-from customers.models import Customer
 
 
 class VehicleType(models.Model):

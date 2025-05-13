@@ -1,0 +1,13 @@
+[flake8]
+# tamanho máximo de linha
+max-line-length = 120
+
+# o que não queremos lintar
+exclude =
+    .git,
+    __pycache__,
+    src/**/migrations/,
+    src/core/settings.py
+
+# apenas os códigos de erro a ignorar
+ignore = F401,E265,E111,E302,W291,E501

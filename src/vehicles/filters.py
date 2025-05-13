@@ -7,4 +7,3 @@ class VehicleFilterClass(AutoRQLFilterClass):
 
 class VehicleTypeFilterClass(AutoRQLFilterClass):
   MODEL = VehicleType
-

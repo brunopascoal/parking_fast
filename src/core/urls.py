@@ -2,9 +2,9 @@ from django.contrib import admin
 from django.urls import include, path
 
 from drf_spectacular.views import (
-  SpectacularAPIView, 
-  SpectacularSwaggerView,
-  SpectacularRedocView
+    SpectacularAPIView,
+    SpectacularSwaggerView,
+    SpectacularRedocView,
 )
 
 urlpatterns = [
@@ -16,5 +16,4 @@ urlpatterns = [
     path("api/v1/", include("parking.urls")),
     path("api/v1/", include("vehicles.urls")),
     path("", admin.site.urls),
-
 ]
