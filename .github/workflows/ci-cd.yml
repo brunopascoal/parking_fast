@@ -77,4 +77,4 @@ jobs:
             cd /home/${{ secrets.VPS_USERNAME }}/parking_fast
             docker compose down
             docker compose pull
-            docker compose up -d --build-build
+            docker compose up -d --build
