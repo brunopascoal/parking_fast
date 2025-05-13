@@ -16,8 +16,11 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["parking.brunopascoal.tech"]
-CSRF_TRUSTED_ORIGINS = ['https://parking.brunopascoal.tech']
+ALLOWED_HOSTS = ["parking.brunopascoal.tech", "31.97.8.152", "localhost", "127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = [
+    'https://parking.brunopascoal.tech',
+    'http://31.97.8.152:8001'
+]
 
 # Application definition
 
