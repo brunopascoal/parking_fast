@@ -46,4 +46,4 @@ jobs:
 
       - name: Rodar testes Django
         run: |
-          python src/manage.py test --settings=seu_projeto.settings
+          python src/manage.py test --settings=core.settings
